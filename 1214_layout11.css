@@ -12,7 +12,7 @@
 
     display: grid;
     grid-template-columns: repeat(2, 1fr);
-    grid-template-rows: 20vh 20vh 35vh 20vh;
+    grid-template-rows: 20vh 20vh 35vh 15vh;
     grid-template-areas:
     "header header" 
     "main main"
