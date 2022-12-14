@@ -4,24 +4,61 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="index.css">
-    <title>9번 레이아웃</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+        }
+        #wrap {
+            width: 90%;
+            margin: 30px auto;
+            display: grid;
+            grid-template-columns: repeat(2, 1fr) ;
+            grid-template-rows: 4vh 10vh;
+            grid-template-areas: 
+            "box1 box1"
+            "box2 box2";
+            text-align: center;
+        }
+        header {
+            grid-area: box1;
+        }
+
+        main {
+            grid-area: box2;
+        }
+        p {
+            margin: 20px 0 5px 0;
+            line-height: 2.4rem;
+        }
+        a {
+            text-decoration: none;
+            background: #ddd;
+            color: #333;
+            padding: 10px 30px;
+            border-radius: 10px ;
+        }
+    </style>
+    <title>checkTheHomework</title>
 </head>
 <body>
     <div id="wrap">
-        <div id="main">
         <header>
-            <h1></h1>
-        </header>
-        <section>
-            <div>section1</div>
-            <div>section2</div>
-        </section>
-        <footer></footer>
+            <h1>숙제</h1>
+            <br>
+            <hr>
+         </header>
+        <main>
+            <div>
+                <br>
+                <p>12/13</p>
+                <a href="1213_layout9.html">layout09</a>
+            </div>
+            <div>
+                <p>12/14</p>
+                <a href="1214_layout11.html">layout11</a>
+            </div>
+        </main>
     </div>
-        <aside></aside>
-        <div class="clear"></div>
-    </div>
-    
 </body>
 </html>

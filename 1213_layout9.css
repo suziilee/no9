@@ -1,0 +1,88 @@
+/* 초기화 */
+* {
+    margin: 0;
+    padding: 0;
+}
+
+#wrap {
+    width: 1000px;
+    margin: 5px auto;
+    padding: 20px;
+    border: 1px solid slateblue;
+    position: relative;
+    box-sizing: border-box;
+}
+
+div#main {
+    float: left;
+    width: 80%;
+}
+header {
+    /* float: left; */
+    width: inherit;
+    height: 100px;
+    background: #ccc;
+    padding: 20px;
+}
+header h1 {
+    width: 20vw;
+    height: inherit;
+    background: pink;
+}
+
+
+section {
+    /* float: left; */
+    width: inherit;
+    height: 300px;
+    padding: 20px;
+    border: 1px solid #000;
+    position: relative;
+    margin: 20px 0 20px 0;
+}
+section div:first-child {
+    width: 40%;
+    height: 100px;
+    background: seagreen;
+    position: absolute;
+    top: 20px;
+    right: 20px;
+    padding: 10px;
+}
+section div:nth-child(2) {
+    width: 40%;
+    height: 100px;
+    background: seagreen;
+    position: absolute;
+    bottom: 20px;
+    left: 20px;
+    padding: 10px;
+}
+
+
+footer {
+    width: inherit;
+    height: 100px;
+    border: 1px solid #000;
+    padding: 20px;
+}
+
+
+aside {
+    border: 1px solid #000;
+    width: 25%;
+    height: 622px;
+    padding: 20px;
+    /* float: right; */
+    margin: 0 0 0 20px;
+
+    position: absolute;
+    top: 20px;
+    right: 20px;
+
+
+}
+
+.clear {
+    clear: both;
+}
