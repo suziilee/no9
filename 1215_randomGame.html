@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <script>
+        document.write(`<h1>컴퓨터 가위 바위 보 맞추기</h1>`);
+
+        // 사용자에게 받는다.
+        let game=prompt('가위 바위 보! \n중에 무엇이 나올까요~ 맞춰보세요!');       
+        let gameImg;
+
+        //스위치문
+        switch(game){
+            case "가위" : gameImg=1;
+            break;
+            case "바위" : gameImg=2;
+            break;
+            case "보" : gameImg=3;
+            break;
+            // default : gameImg=error;
+            default : alert("잘못 입력하셨습니다.");
+        }
+
+        let com = Math.ceil(Math.random()*3);       
+        // 3 부분에 문자열로 넣을 경우엔 length로 기입해야만 변수에 따라 변경 가능.
+
+        document.write(`<img src="images/math_img_${com}.jpg">`);
+
+
+        if(gameImg == com){
+            document.write(`<br><img src="images/game_1.jpg">`);
+        }else{
+            document.write(`<br><img src="images/game_2.jpg">`);
+        }
+    </script>
+    <title>수학 객체 활용(가위,바위,보)</title>
+</head>
+<body>
+    
+</body>
+</html>
