@@ -1,0 +1,204 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <style>
+        body {
+            background: #ccc;
+            margin: 0;
+            padding: 0;
+        }
+
+        header {
+            width: 100%;
+            padding: 20px 20px 20px 50px;
+            background: #232323;
+            margin: 0 0 50px 0;
+        }
+        h1 {
+            color: #fff;
+        }
+
+        /* 1st popup */
+        .popup {
+            background: #fff;
+            width: 320px;
+            height: 460px;
+            border: 1px solid #ccc;
+            padding: 20px 30px; 
+            
+        }
+        .popup li {
+            list-style: none;
+            padding: 0;
+            margin: 0 0 15px -40px;
+            line-height: 1.5rem;
+        }
+        .popup button {
+            position: absolute;
+            bottom: 20px;
+            right: 20px;
+            font-size: 16px;
+            padding: 8px 15px;
+            border-radius: 50px;
+            border: thin solid #ddd;
+            background: rgba(255, 255, 255, 0.8);
+            cursor: pointer;
+        }
+        .popup button:hover {
+            background: #000;
+            color: #fff;
+        }
+        #notice {
+            position: absolute;
+            left: 50px;
+            top: 126px;
+            z-index: 9999;
+        }
+
+        /* 2nd popup */
+        .popup2 {
+            position: absolute;
+        }
+        .popup2 button {
+            position: absolute;
+            bottom: 20px;
+            right: 20px;
+            font-size: 16px;
+            padding: 8px 15px;
+            border-radius: 50px;
+            border: none;
+            background: rgba(255, 255, 255, 0.8);
+            cursor: pointer;
+        }
+        .popup2 button:hover {
+            background: #000;
+            color: #fff;
+        }
+        #event {
+            position: absolute;
+            left: 433px;
+            top: 126px;
+            z-index: 9998
+        }
+    </style>
+    <title>레이어 팝업창</title>
+</head>
+<body>
+    <header>
+        <h1>logo</h1>
+    </header>
+    <p>문서를 열면 레이어팝업창이 그대로 보입니다.</p>
+    <pre>
+        <!-- pre : 입력한 그대로 출력하는 태그 -->
+        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Benivolentiam intellegam velim levitatibus scripta amicitiae. Ornare consulatu molestia, adipiscendarum volumus nos noris pertinaces purus vivendum maius. Fuga adversantur fabellas p, fugienda primos lacus aequitate. Dicta primisque quoddam dirigentur plurimum ingeniis aegritudines, interdictum illae invenerit disciplinam. Homines pariter iniuste pueros constituamus, firmitatem amori dixi vidisse nihil. Mutans re nudus vero, viros his, circumcisaque assentiar. Voluptates arbitrantur accedis notionem, dissentiet. 
+
+Individua scribere improbis nominavi ius fames convincere admodum. Vituperata doctiores, acute iracundia derigatur collegisti delicata. Intellegere exquirere invenerit delicata dicunt. Videtisne careret, cognitionis quid sentire tranquillitate indignae existimavit. Gravioribus dices horrent cupiditatum octavio oblique iisque expleantur, consuetudinum. Iniuria ardore, triari intus eoque epicuri, motum, reliqui solam scribere. Inportuno aegritudinem ignota praeclaram iaculis odit rem dulce exedunt. Conubia turpius videamus artibus nullam variari consistat. 
+
+Individua renovata mirari neglegit attico potenti, perdiderunt. Dedocere vulputate frustra iudicare distrahi liberalitati possit nonne locatus. Re his, videtur praesens rogatiuncula divina optabilem. Aequitate studia percussit maximo investigandi, ruinae. Divitiarum aegritudinem athenis variari calere severa declinationem vestibulum probes. Minuti efflorescere civibus urna, diesque. Asperum arbitrarer eo iniuria conquirendae parvam, meminerimus imitarentur priventur. Praetorem controversia moveat sequi specie. Facillime retinere praebeat partis minorem, praetermissum illaberetur. 
+
+Partis aliqua erat fuisse optinere fieri laetetur vexetur porro. Plena tam habeo chrysippe celeritas venandi tollunt parvos iustitia praetermittenda insolens. Aequum detracta idem fermentum consumere. Agatur afranius imperio loquerer divelli finitas. Paranda minuendas homo amoris ultricies mea infanti traditur. Talem aegritudo ergo, iucunda plerisque. Liber tenetur quippiam incorrupte alienae, numen detracta, una recte contineret. 
+
+Stabilem quiddam infantes novi ignem timiditatem eruditus parta leniter coercendi. Infimum vacare, sophocles exiguam assumenda. Debitis tale probarent amicitia intervenire latine adhuc audire neglegit nonummy fortibus. Laboramus finis panaetium opes laboramus iucunditas donec verissimum inanes incorruptis nobis. Dolorum errore honeste, utilior suspicor graeci refugiendi exercitationem praeter fruenda, credo. Graecam pueri vacillare, contentus, probamus fugiendis pertinax corrupisti fingitur. 
+
+Ponderum lectorem, disputata, pauca theatro centurionum nixam hinc lucilius factis. Familias male religionis possimus sicut multoque restat reperiuntur caritatem menandri acutum. Temperantiamque didicisse deduceret impetus fatemur gymnasia iucundius porrecta vitam reprehensione. Effluere tellus quosdam, facillime, percipi fruitur difficiles graeca sublata patet. Poetae velint, fere conquirendae magnosque. 
+
+Percipiatur utuntur tollatur doceat, liberos inviti nominant sociis dicent paria. Sequimur exorsus inciderint discordiae effici, felis docet. Voluptatum deterret tertio consequuntur dixissem uberius memoria. Poenis nulla fugiamus pecuniae probarem sapientiam provincias concederetur saepe percussit expedita. Ultrices imperiis deditum explicabo cupiditatibus, exercitationem cognitioque. 
+
+Rationem virtutem adamare platea, declinare. Ob faciendumve ruinae imperitorum noctesque dolores apeirian. Reliquarum inesse, suscepi, reprimique pariendarum incorruptis. Successerit ipsos maximo iudicium atomi inprobis exercitumque. Tranquillae pariuntur momenti, tantas accusata, reque. 
+
+Verear expectamus clarorum late quis tollitur quorum fruenda. Senserit agam expectat veri doctrina deinde electram populo nescio hosti. Texit offendit putent iactare evolvendis chrysippe disserunt efficeret voluptaria ultima. Utramque benivolentiam aiunt dicta videri eum superstitione antiquis movere permulta commodi. Gravioribus minima mors simulent excruciant pendet albuci. 
+
+Suum sentiunt usus eosque nosque distrahi arbitrium formidines scribentur praetermittatur, laetamur. Dicta praeterea maximeque, plerumque, dicantur cotidie detracto alterum artibus. Personae ipsa utrumque dividendo offendit circumcisaque, firme ambigua versuum. Maioribus stoicos didicisse nullae nostrum ferre ignota mirari. Res cupiditate tranquillitate officia tertium secunda horrida fidem turpius, fieri suscipiet. 
+
+Referuntur laboribus persequeris mnesarchum, temperantia dicenda, consequuntur latinam quaerendi solis. Athenis nominavi miraretur dicemus diesque sumus facultas, incurrunt meis. Ceteris voluptatum honesta cognoscerem potiora duxit continens hendrerit occulte p indicaverunt. Affecti sapientes tradidisse, quantus aeque, discordant aliud. Varius vias pervenias negant, veritatis iudicem interea oblique videbitur latinis, confidam. Adipiscendarum sapientiamque oblique sermo de. Praeter deinde patria didicisse sequi. 
+
+Meminerimus desiderare emancipaverat fugiendum pacem. Seque parte latinis comparare maxime suapte legendi suscepi factorum. Seque magnum ipsa eveniet fructu. Hortensio ob eosdem distinguique discordiae labores temeritas lectorem. Civibus hic occulte nostri peccandi affecti cruciantur derepta meminerit. Confidet posuit integer monstruosi deinde. Nulla ponderum exiguam inprobis existimo clariora. 
+
+Intervalla videtis tum, dices improbis ista ipsos motum huic odioque. Posuit repugnantiumve aliquos numquidnam cupiditatibusque latine segnitiae epicuro aristippi memoria. Amet ligula atomos confidere verear honestum suscipere legimus personae iudicium. Cotidieque indicaverunt feramus vidisse sustulisti vacare tenetur tranquillitatem. Cuiquam qui dicam, fonte, conetur, audiebamus ullo clarorum futuros necessitatibus tranquillitate. Legam conflixisse odioque diceretur perfecto distinctio ipsius, platone consentaneum permulta laboribus. Artes legendis disciplinam data despicationes animi versatur scribere. 
+
+Explicavi vulgo sentiunt magnos, solam amicitias venire arguerent. Latinas conquisitis dominationis brutus consuetudine ob inscientia urbane. Doctiores agam iucunda utilitatibus, altera fecisse. Aperiam refugiendi, integre, omnes, intus artifex epularum indocti, epicureum, displicet. Eventurum docui sublatum alienum tamquam qua epicurus. Oratoribus reliquisti mel tractat fortitudinis maioribus. Sit negent, sale praetermittatur animumque idque vestra placebit iste. Mors vestrae facile comprobavit nascetur tradidisse accedit arbitraretur, asperum angusti multitudinem. Percurri nostra risus audita tum nostras. 
+
+Lorem facio intellegunt opinemur adversarium crudelis fabulae quaeque transferam. Semper fuga veritus tempor diceret permulta tandem primorum. Inane inter perferendis laetetur, necessariae omnesque, deinde molestie malum. Quippiam fugiendam rerum dictas levis factorum effectrices nacti politus. Illustribus arguerent valetudinis beate consentientis causam curiosi reliqui factis copulationesque. Inprobitas utraque mirari avocent dolore. Nihilo artifex pater quoque traditur negant democrito antipatrum accurate vim.
+
+Lorem ipsum dolor sit amet, consectetur adipiscing elit. Benivolentiam intellegam velim levitatibus scripta amicitiae. Ornare consulatu molestia, adipiscendarum volumus nos noris pertinaces purus vivendum maius. Fuga adversantur fabellas p, fugienda primos lacus aequitate. Dicta primisque quoddam dirigentur plurimum ingeniis aegritudines, interdictum illae invenerit disciplinam. Homines pariter iniuste pueros constituamus, firmitatem amori dixi vidisse nihil. Mutans re nudus vero, viros his, circumcisaque assentiar. Voluptates arbitrantur accedis notionem, dissentiet. 
+
+Individua scribere improbis nominavi ius fames convincere admodum. Vituperata doctiores, acute iracundia derigatur collegisti delicata. Intellegere exquirere invenerit delicata dicunt. Videtisne careret, cognitionis quid sentire tranquillitate indignae existimavit. Gravioribus dices horrent cupiditatum octavio oblique iisque expleantur, consuetudinum. Iniuria ardore, triari intus eoque epicuri, motum, reliqui solam scribere. Inportuno aegritudinem ignota praeclaram iaculis odit rem dulce exedunt. Conubia turpius videamus artibus nullam variari consistat. 
+
+Individua renovata mirari neglegit attico potenti, perdiderunt. Dedocere vulputate frustra iudicare distrahi liberalitati possit nonne locatus. Re his, videtur praesens rogatiuncula divina optabilem. Aequitate studia percussit maximo investigandi, ruinae. Divitiarum aegritudinem athenis variari calere severa declinationem vestibulum probes. Minuti efflorescere civibus urna, diesque. Asperum arbitrarer eo iniuria conquirendae parvam, meminerimus imitarentur priventur. Praetorem controversia moveat sequi specie. Facillime retinere praebeat partis minorem, praetermissum illaberetur. 
+
+Partis aliqua erat fuisse optinere fieri laetetur vexetur porro. Plena tam habeo chrysippe celeritas venandi tollunt parvos iustitia praetermittenda insolens. Aequum detracta idem fermentum consumere. Agatur afranius imperio loquerer divelli finitas. Paranda minuendas homo amoris ultricies mea infanti traditur. Talem aegritudo ergo, iucunda plerisque. Liber tenetur quippiam incorrupte alienae, numen detracta, una recte contineret. 
+
+Stabilem quiddam infantes novi ignem timiditatem eruditus parta leniter coercendi. Infimum vacare, sophocles exiguam assumenda. Debitis tale probarent amicitia intervenire latine adhuc audire neglegit nonummy fortibus. Laboramus finis panaetium opes laboramus iucunditas donec verissimum inanes incorruptis nobis. Dolorum errore honeste, utilior suspicor graeci refugiendi exercitationem praeter fruenda, credo. Graecam pueri vacillare, contentus, probamus fugiendis pertinax corrupisti fingitur. 
+
+Ponderum lectorem, disputata, pauca theatro centurionum nixam hinc lucilius factis. Familias male religionis possimus sicut multoque restat reperiuntur caritatem menandri acutum. Temperantiamque didicisse deduceret impetus fatemur gymnasia iucundius porrecta vitam reprehensione. Effluere tellus quosdam, facillime, percipi fruitur difficiles graeca sublata patet. Poetae velint, fere conquirendae magnosque. 
+
+Percipiatur utuntur tollatur doceat, liberos inviti nominant sociis dicent paria. Sequimur exorsus inciderint discordiae effici, felis docet. Voluptatum deterret tertio consequuntur dixissem uberius memoria. Poenis nulla fugiamus pecuniae probarem sapientiam provincias concederetur saepe percussit expedita. Ultrices imperiis deditum explicabo cupiditatibus, exercitationem cognitioque. 
+
+Rationem virtutem adamare platea, declinare. Ob faciendumve ruinae imperitorum noctesque dolores apeirian. Reliquarum inesse, suscepi, reprimique pariendarum incorruptis. Successerit ipsos maximo iudicium atomi inprobis exercitumque. Tranquillae pariuntur momenti, tantas accusata, reque. 
+
+Verear expectamus clarorum late quis tollitur quorum fruenda. Senserit agam expectat veri doctrina deinde electram populo nescio hosti. Texit offendit putent iactare evolvendis chrysippe disserunt efficeret voluptaria ultima. Utramque benivolentiam aiunt dicta videri eum superstitione antiquis movere permulta commodi. Gravioribus minima mors simulent excruciant pendet albuci. 
+
+Suum sentiunt usus eosque nosque distrahi arbitrium formidines scribentur praetermittatur, laetamur. Dicta praeterea maximeque, plerumque, dicantur cotidie detracto alterum artibus. Personae ipsa utrumque dividendo offendit circumcisaque, firme ambigua versuum. Maioribus stoicos didicisse nullae nostrum ferre ignota mirari. Res cupiditate tranquillitate officia tertium secunda horrida fidem turpius, fieri suscipiet. 
+
+Referuntur laboribus persequeris mnesarchum, temperantia dicenda, consequuntur latinam quaerendi solis. Athenis nominavi miraretur dicemus diesque sumus facultas, incurrunt meis. Ceteris voluptatum honesta cognoscerem potiora duxit continens hendrerit occulte p indicaverunt. Affecti sapientes tradidisse, quantus aeque, discordant aliud. Varius vias pervenias negant, veritatis iudicem interea oblique videbitur latinis, confidam. Adipiscendarum sapientiamque oblique sermo de. Praeter deinde patria didicisse sequi. 
+
+Meminerimus desiderare emancipaverat fugiendum pacem. Seque parte latinis comparare maxime suapte legendi suscepi factorum. Seque magnum ipsa eveniet fructu. Hortensio ob eosdem distinguique discordiae labores temeritas lectorem. Civibus hic occulte nostri peccandi affecti cruciantur derepta meminerit. Confidet posuit integer monstruosi deinde. Nulla ponderum exiguam inprobis existimo clariora. 
+
+Intervalla videtis tum, dices improbis ista ipsos motum huic odioque. Posuit repugnantiumve aliquos numquidnam cupiditatibusque latine segnitiae epicuro aristippi memoria. Amet ligula atomos confidere verear honestum suscipere legimus personae iudicium. Cotidieque indicaverunt feramus vidisse sustulisti vacare tenetur tranquillitatem. Cuiquam qui dicam, fonte, conetur, audiebamus ullo clarorum futuros necessitatibus tranquillitate. Legam conflixisse odioque diceretur perfecto distinctio ipsius, platone consentaneum permulta laboribus. Artes legendis disciplinam data despicationes animi versatur scribere. 
+
+Explicavi vulgo sentiunt magnos, solam amicitias venire arguerent. Latinas conquisitis dominationis brutus consuetudine ob inscientia urbane. Doctiores agam iucunda utilitatibus, altera fecisse. Aperiam refugiendi, integre, omnes, intus artifex epularum indocti, epicureum, displicet. Eventurum docui sublatum alienum tamquam qua epicurus. Oratoribus reliquisti mel tractat fortitudinis maioribus. Sit negent, sale praetermittatur animumque idque vestra placebit iste. Mors vestrae facile comprobavit nascetur tradidisse accedit arbitraretur, asperum angusti multitudinem. Percurri nostra risus audita tum nostras. 
+
+Lorem facio intellegunt opinemur adversarium crudelis fabulae quaeque transferam. Semper fuga veritus tempor diceret permulta tandem primorum. Inane inter perferendis laetetur, necessariae omnesque, deinde molestie malum. Quippiam fugiendam rerum dictas levis factorum effectrices nacti politus. Illustribus arguerent valetudinis beate consentientis causam curiosi reliqui factis copulationesque. Inprobitas utraque mirari avocent dolore. Nihilo artifex pater quoque traditur negant democrito antipatrum accurate vim.
+    </pre>
+
+
+
+    <!-- 레이어 팝업창(가장 위 혹은 가장 아래 작성) -->
+    <div id="notice" class="popup">
+        <h2>배송안내</h2>
+        <hr>
+        <ul>
+            <li>
+                주문하신 상품은 보통 익일 출고되어 물류와 택배사 상황에 따라 영업일 기준 1~4일 가량 소요 될 수 있습니다.
+            </li>
+            <li>
+                여러 상품을 주문하실 경우 재고 준비에 따라 개별 배송될 수 있으며, 재고 변동 상황에 따라 품절 될 수 있습니다.
+            </li>
+            <li>
+                <b>배송 일정 및 기간</b> <br> 
+                주문 제작 제품 : 7~14일 (주말, 공휴일 제외) <br>
+                당일 배송 제품 : 배송 다음날 도착
+            </li>
+            <li>
+                *별도 문의는 카카오톡으로 문의 바랍니다. <br>
+                <b>카카오톡 플러스친구 : @수지수지</b>
+            </li>
+        </ul>
+        <button>close</button>
+    </div>
+
+    <div id="event" class="popup2">
+        <img src="img/popup_banner.png" alt="크리스마스 이벤트">
+        <button>close</button>
+    </div>
+
+    <script>
+        let closeBtn = document.querySelector('.popup > button');
+        let closeBtn2 = document.querySelector('.popup2 > button');
+
+        // 이벤트처리기 - 너 클릭할거야? 더블클릭할거야? 같은 조건을 걸어주는
+        closeBtn.addEventListener('click', function(){
+            document.querySelector('.popup').style.display='none';
+            document.querySelector('body').style.background='none';
+        });
+        
+        closeBtn2.addEventListener('click', function(){
+            document.querySelector('.popup2').style.display='none';
+        });
+
+    </script>
+</body>
+</html>
