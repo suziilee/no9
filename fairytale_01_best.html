@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="ko">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width">
+    <title>라이트박스</title>
+    <link rel="stylesheet" href="css/fairytale_01_best.css">
+    <link rel="stylesheet" href="css/fairytale_00_index.css">
+    <link rel="stylesheet" href="">
+    <link href="https://fonts.googleapis.com/css2?family=Schoolbell&display=swap" rel="stylesheet">
+  </head>
+  <body>
+    <!-- 속성
+      src : html사양에서 정의된 기능적인 의미를 가지고 있음.
+      data-src : 의미없음 정의하지만 스크립트에서 사용되는 소자.
+    -->
+    
+    <div id="container">
+    <div id="gnb">
+      <header>
+        <h1><a href="fairytale_00_index.html">Smallest collection of Fairytales<br> in the world</a></h1>
+        <ul>
+            <li><a href="fairytale_02_popular.html">Most Popular</a></li>
+            <li><a href="fairytale_01_best.html">Best Collections</a></li>
+        </ul>
+    </header>
+    </div>
+    <div id="wrap">
+      <div class="list">
+        <ul>
+          <li><img src="img/thumb_01.png" data-src="img/fairytale_01.png" class="pic"></li>
+          <li><img src="img/thumb_02.png" data-src="img/fairytale_02.png" class="pic"></li>
+          <li><img src="img/thumb_03.png" data-src="img/fairytale_03.png" class="pic"></li> 
+          <li><img src="img/thumb_04.png" data-src="img/fairytale_04.png" class="pic"></li>
+          <li><img src="img/thumb_05.png" data-src="img/fairytale_05.png" class="pic"></li>
+          <li><img src="img/thumb_06.png" data-src="img/fairytale_06.png" class="pic"></li>          
+        </ul>    
+      </div>
+      <div id="box">
+        <img src="img/fairytale_01.png" alt="" id="boximg">			
+      </div>
+    </div>
+  </div>
+    <!-- 스크립트 -->
+    <script>
+      let pics = document.getElementsByClassName('pic');
+      // Teacher. .pic인 요소들을 가져와 변수 pics에 저장(=querySelectorAll('.pic')도 가능)
+      // getElementsByClassName은 옛날 사용 방식 -> querySelectAll 사용 가능.
+      
+
+      // 호출(이름만 불러준 상태)
+      let box = document.getElementById('box');
+      let boximg = document.getElementById('boximg');
+
+
+      // for문 - for(초기화; 식(어디까지); 증감식);
+      for(i=0; i<pics.length; i++){
+        pics[i].addEventListener('click', showLightbox /* 동작, 함수 호출*/);
+      };
+      function showLightbox(){
+        let bigImg = this.getAttribute('data-src');  
+        // let bigImg = this.data-src;  이렇게도 작성 가능.
+        boximg.setAttribute('src', bigImg);
+        box.style.display='block';
+      }
+
+
+      // click이벤트가 발생했을 때 실행할 함수 선언
+      box.onclick = function(){
+        box.style.display= 'none';
+      }
+
+    </script>
+  </body>
+</html>

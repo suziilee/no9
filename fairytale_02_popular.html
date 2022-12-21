@@ -1,0 +1,224 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/fairytale_02_popular.css">
+    <link rel="stylesheet" href="css/fairytale_00_index.css">
+    <link rel="stylesheet" href="">
+    <link href="https://fonts.googleapis.com/css2?family=Schoolbell&display=swap" rel="stylesheet">
+    <title>상세내용보기</title>
+</head>
+<body>
+    <div id="container">
+    <!-- <header>
+        <h1><a href="detail.html">
+            <img src="img/kids_logo.png" alt="logo">
+        </a></h1>
+    </header> -->
+    <div id="gnb">
+        <header>
+          <h1><a href="fairytale_00_index.html">Smallest collection of Fairytales<br> in the world</a></h1>
+          <ul>
+              <li><a href="fairytale_02_popular.html">Most Popular</a></li>
+              <li><a href="fairytale_01_best.html">Best Collections</a></li>
+          </ul>
+      </header>
+      </div>
+  
+    <div id="wrap" class="box">
+            <div class="item"><!-- 1st .item -->
+                    <img src="img/fairytale_01.png" alt="최고로 멋진 크리스마스 트리">
+                    <button id="open01" class="over" onclick="showDetail01();">상세 설명보기</button>
+
+                <!-- 
+                    btn#open를 눌렀을 때 .detail 내용이 보이고, 
+                    btn#close를 눌렀을 때, 다시 숨김.
+                -->
+                <div id="sangse01" class="detail">
+                    <h4>최고로 멋진 크리스마스 트리</h4>
+                    <p>
+                        저자 : 글로리아 휴스턴 / 그림 : 바바라 쿠니
+                    </p>
+                    <p>
+                        책소개 : 
+                        크리스마스를 더욱 따뜻하게 만들어 줄 선물 같은 이야기 『최고로 멋진 크리스마스트리』. 크리스마스이브가 되면, 아이들은 누구나 설레는 마음을 안고 잠이 듭니다. 산타 할아버지가 선물을 두고 가기를 바라면서 말이에요. 그 선물은 어떤 아이는 장난감, 어떤 아이는 책, 또 어떤 아이는 맛있는 과자 등등 평소에 간절하게 원했던 것일 테지요. 파인그로브마을에 살고 있는 소녀 루시도 마찬가지였습니다. 루시는 크리스마스 선물을 위해 매일 밤 간절하게 기도했습니다. 루시가 바라는 크리스마스 선물은 무엇이었을까요? 바버러 쿠니와 글로리아 휴스턴이 행복한 크리스마스를 더욱 따뜻하게 만들어 줄, 루시의 아주 특별한 크리스마스 이야기를 전합니다.
+                    </p>
+                    <button id="close" class="hide" onclick="hideDetail01();">상세 설명닫기</button>
+                </div>
+            </div><!-- /1st .item -->
+
+
+            <div class="item"><!-- 2nd .item -->
+                    <img src="img/fairytale_02.png" alt="크리스마스에는 축복을">
+                    <button id="open02" class="over" onclick="showDetail02();">상세 설명보기</button>
+
+                <div id="sangse02" class="detail">
+                    <h4>크리스마스에는 축복을</h4>
+                    <p>
+                        저자 : 김현철 / 그림 : 최정인
+                    </p>
+                    <p>
+                        책소개 : 
+                        하얀 눈으로 덮여 가는 거리, 거기서 만난 크리스마스의 축복! 아이는 하나둘 떨어지기 시작한 눈송이를 향해 살며시 손을 내밀어 봅니다. 그러다 문득 길가에서 서성이던 아기 고양이를 발견했어요.
+                        “너도 혼자구나. 여기서 뭐하고 있니?” 어느새 둘은 친구가 되고, 아이는 아기 고양이가 이끄는 대로 발걸음을 옮깁니다. 하얀 눈으로 덮여 가는 크리스마스이브의 거리, 둘 앞에는 어떤 풍경과 만남이 기다리고 있을까요? 매년 크리스마스가 되면 우리는 마음속으로 소원을 빌고, 멋진 선물을 기대하지요. 하지만 크리스마스의 가장 큰 축복은 이미 우리 곁에 와 있을지 몰라요. 화려하게 반짝이는 선물이 아니라, 바로 지금 ‘함께하고 있는 것’으로요. 〈크리스마스에는 축복을〉의 따뜻하고 아름다운 멜로디와 함께 내 곁에 이미 와 있는 소중한 축복을 찾아보세요.
+                    </p>
+                    <button id="close" class="hide" onclick="hideDetail02();">상세 설명닫기</button>
+                </div>
+            </div><!-- /2nd .item -->
+
+
+            <div class="item"><!-- 3rd .item -->
+                <img src="img/fairytale_03.png" alt="마녀 위니의 크리스마스 대소동">
+                <button id="open03" class="over" onclick="showDetail03();">상세 설명보기</button>
+
+            <div id="sangse03" class="detail">
+                <h4>마녀 위니의 크리스마스 대소동</h4>
+                <p>
+                    저자 : 밸러리 토머스 / 그림 : 코키 폴
+                </p>
+                <p>
+                    책소개 : 
+                    위트와 유머 있는 그림으로 전 세계 아이들의 시선을 사로잡은 작가 코키 폴의 신작 『마녀 위니의 크리스마스 대소동』. 부스스한 머리와 풀린 눈, 매부리코 등 장난기 가득하고 익살스러운 모습의 마녀 위니와 새까만 고양이 윌버가 펼치는 흥미진진한 마법의 세계에 아이들은 열광한다. 무슨 소원이든 들어 주는 요술 지팡이 하나 있었으면 하는 아이들의 심리를 코믹하고 엉뚱하면서도 따뜻한 상상력으로 풀어내 신나는 판타지의 세계로 초대하기 때문이다. 「마녀 위니」 시리즈의 신간 『마녀 위니의 크리스마스 대소동』에는 마녀 위니와 고양이 윌버, 산타의 크리스마스 선물 배달 대작전이 펼쳐진다. 크리스마스를 코앞에 둔 위니와 윌버는 파티를 준비하느라 정신이 없다. 그런데 이게 웬일? 크리스마스 전날 밤, 산타가 위니네 집 굴뚝에 끼어 버리고 만 것이다. 크리스마스 선물을 빨리 나눠 주어야 하는 산타는 위니와 윌버에게 도움을 청하는데…….
+                </p>
+                <button id="close" class="hide" onclick="hideDetail03();">상세 설명닫기</button>
+            </div>
+        </div><!-- /3rd .item -->
+
+        <div class="item"><!-- 4th .item -->
+                <img src="img/fairytale_04.png" alt="아기 다람쥐의 크리스마스">
+                <button id="open04" class="over" onclick="showDetail04();">상세 설명보기</button>
+
+            <div id="sangse04" class="detail">
+                <h4>아기 다람쥐의 크리스마스</h4>
+                <p>
+                    저자 / 그림 : 도요후쿠 마키코
+                </p>
+                <p>
+                    책소개 : 
+                    온 세상 아이들에게 크리스마스 선물을 가져다주는 산타를 보며 아기 다람쥐는 문득 생각해요. '산타에게는 선물이 없는 걸까? 산타에게도 선물을 주면 좋을 텐데.' 이렇게 해서 아기 다람쥐의 산타 선물 찾기가 시작되지요. 그런데 아기 다람쥐는 어떤 선물을 주어야 산타가 기뻐할지 잘 모르겠어요. 아기 다람쥐가 가장 좋아하는 도토리는 어떨까요? 아니면 곰이 추천한 사과는요? 어쩌면 여우가 말한 예쁜 꽃이 좋을지도 모르겠어요. 혹은 너구리가 알려준 빛나는 돌이나 오리가 알려준 저녁노을을 보여 주는 게 좋을지도 몰라요. 도대체 산타는 어떤 선물을 받으면 기뻐할까요? 점점 알 수 없게 된 아기 다람쥐는 선물을 미처 준비하지 못한 채 도토리를 껴안고 잠이 들고 말아요. 그런데 산타는 아기 다람쥐를 보며 멋진 선물을 받았다며 기뻐하지요. 산타가 받은 선물은 무엇일까요? 산타에게 줄 크리스마스 선물을 준비하는 아기 다람쥐를 보며 선물의 진정한 의미를 생각해 볼 수 있어요.
+                </p>
+                <button id="close" class="hide" onclick="hideDetail04();">상세 설명닫기</button>
+            </div>
+        </div><!-- /4th .item -->
+
+
+        <div class="item"><!-- 5th .item -->
+            <img src="img/fairytale_05.png" alt="산타와 함께 춤을">
+            <button id="open05" class="over" onclick="showDetail05();">상세 설명보기</button>
+
+        <div id="sangse05" class="detail">
+            <h4>산타와 함께 춤을</h4>
+            <p>
+                저자 / 그림 : 이연주
+            </p>
+            <p>
+                책소개 : 
+                모두가 잠든 크리스마스이브, 산타는 꼬마에게 선물을 주러 갔습니다. 마법의 주문을 외우고 멋진 춤을 추었지요. 메리메리 송송송, 해피해피 추추추… 산타가 꼬마에게 선물을 주려는데, 꼬마가 사라졌습니다. 꼬마는 어디로 갔을까요? 과연 산타는 꼬마에게 어떤 선물을 줄까요? 산타와 꼬마의 특별하고 멋진 크리스마스 이야기를 담은 그림책, <산타와 함께 춤을>입니다.
+            </p>
+            <button id="close" class="hide" onclick="hideDetail05();">상세 설명닫기</button>
+        </div>
+        </div><!-- /5th .item -->
+
+
+        <div class="item"><!-- 6th .item -->
+            <img src="img/fairytale_06.png" alt="눈사람 아저씨와 눈강아지">
+            <button id="open06"  class="over" onclick="showDetail06();">상세 설명보기</button>
+
+        <div id="sangse06" class="detail">
+            <h4>눈사람 아저씨와 눈강아지</h4>
+            <p>
+                저자 / 그림 : 레이먼드 브리그스
+            </p>
+            <p>
+                책소개 : 
+                『눈사람 아저씨와 눈강아지』는 세계 곳곳에서 모여든 눈사람 아저씨와 아줌마의 다양한 표정과 옷차림을 보는 재미와 눈사람 스키 대회 등 신 나는 모험과 마법 같은 환상 이야기가 가득담겨 있습니다. 흥미진진한 이야기와 마법과도 같은 환상적인 사건들이 아이들의 상상력을 자극합니다.
+            </p>
+            <button id="close" class="hide" onclick="hideDetail06();">상세 설명닫기</button>
+        </div>
+        </div><!-- /6th .item -->
+    </div><!-- /#wrap -->
+</div>
+
+
+
+    <!-- 자바스크립트 삽입 -->
+    <script>
+        // jquery에는 토글기능이 있음.
+        // #sangse는 보이고, #open버튼은 숨어라.
+
+
+        // 1st
+        function showDetail01(){
+            document.querySelector('#sangse01').style.display='block';
+            document.querySelector('#open01').style.display='none';
+        }
+
+        function hideDetail01(){
+            document.querySelector('#sangse01').style.display='none';
+            document.querySelector('#open01').style.display='block';
+        }
+
+
+        // 2nd
+        function showDetail02(){
+            document.querySelector('#sangse02').style.display='block';
+            document.querySelector('#open02').style.display='none';
+        }
+
+        function hideDetail02(){
+            document.querySelector('#sangse02').style.display='none';
+            document.querySelector('#open02').style.display='block';
+        }
+
+
+        // 3rd
+        function showDetail03(){
+            document.querySelector('#sangse03').style.display='block';
+            document.querySelector('#open03').style.display='none';
+        }
+
+        function hideDetail03(){
+            document.querySelector('#sangse03').style.display='none';
+            document.querySelector('#open03').style.display='block';
+        }
+
+
+        // 4th
+        function showDetail04(){
+            document.querySelector('#sangse04').style.display='block';
+            document.querySelector('#open04').style.display='none';
+        }
+
+        function hideDetail04(){
+            document.querySelector('#sangse04').style.display='none';
+            document.querySelector('#open04').style.display='block';
+        }
+
+
+        // 5rd
+        function showDetail05(){
+            document.querySelector('#sangse05').style.display='block';
+            document.querySelector('#open05').style.display='none';
+        }
+
+        function hideDetail05(){
+            document.querySelector('#sangse05').style.display='none';
+            document.querySelector('#open05').style.display='block';
+        }
+
+
+        // 6th
+        function showDetail06(){
+            document.querySelector('#sangse06').style.display='block';
+            document.querySelector('#open06').style.display='none';
+        }
+
+        function hideDetail06(){
+            document.querySelector('#sangse06').style.display='none';
+            document.querySelector('#open06').style.display='block';
+        }
+    </script>
+</body>
+</html>
