@@ -1,0 +1,83 @@
+/* 2022-12-21 */
+/* 초기화 */
+* {
+    margin: 0;
+    padding: 0;
+}
+li { 
+    list-style: none;
+    color: #333;
+}
+a{
+    text-decoration: none;
+}
+
+/* contents */
+#gnb {
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    /* justify-content: center; */
+}
+
+/* GNB part */
+header {
+    z-index: 9999;
+    max-width: 100%;
+    min-width: 16rem;
+    height: 6rem;
+    padding: 50px;
+    /* border: 1px solid #eee; */
+    font-family: 'Schoolbell', cursive;
+    background: rgba(255, 255, 255, 0.9);
+    margin: 0 auto;
+    text-align: center;
+
+    transition-property: height;
+    transition-duration: 0.5s, 1s;
+    /* color: #fff; */
+}
+header:hover {
+    height: 12rem;
+}
+header h1{
+    margin-bottom: 1.3rem;
+}
+header h1 a {
+    font-size: 2rem;
+    line-height: 2.2rem;
+    color: cornflowerblue;
+}
+header ul {
+    margin-right: 30px;
+    display: none;
+    opacity: 0;
+}
+header:hover ul {
+    display: block;
+
+    /* transition: 3s;
+    transition-delay: 3s;
+    opacity: 100; */
+    animation: menuOpen 1s linear 1 forwards;
+}
+@keyframes menuOpen {
+    0% {
+        opacity: 0%;
+    }
+    50% {
+        opacity: 50%;
+    }
+    100% {
+        opacity: 100%;
+    }
+}
+
+header ul li a {
+    font-size: 1.6rem;
+    line-height: 2.5rem;
+    color: #888;
+}
+header ul li a:hover {
+    color: #222;
+}
