@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- css -->
+    <link rel="stylesheet" href="css/fairytale_00_index.css">
+    <link rel="stylesheet" href="css/fairytale_03_list.css">
+
+    <!-- font -->
+    <link href="https://fonts.googleapis.com/css2?family=Schoolbell&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Nanum+Gothic:wght@400;800&display=swap" rel="stylesheet">
+
+    <script src="js/jquery.js"></script>
+
+    <title>List of Christmas Fairytales</title>
+</head>
+<body>
+    <div id="container">
+    <div id="gnb">
+        <header>
+          <h1><a href="fairytale_00_index.html">Smallest collection of Fairytales<br> in the world</a></h1>
+          <ul>
+              <li><a href="fairytale_02_popular.html">Most Popular</a></li>
+              <li><a href="fairytale_01_best.html">Best Collections</a></li>
+          </ul>
+      </header>
+      </div>
+
+
+    <div id="wrap">
+    <p class="btn">
+        <a href="#">Popular </a>
+        <ul>
+            <li><a href="#">
+                <p>&lt;모모와 말썽꾸러기 고양이들의 크리스마스&gt;</p>
+                <img src="img/big_01.png" alt="Popular Fairytales 01.모모와 말썽꾸러기 고양이들의 크리스마스"> 
+            </a></li>
+            <li><a href="#">
+                <p>&lt;사랑해 크리스마스에도 사랑해&gt;</p>
+                <img src="img/big_02.png" alt="Popular Fairytales 02.사랑해 크리스마스에도 사랑해"> 
+            </a></li>
+            <li><a href="#">
+                <p>&lt;크리스마스의 마법&gt;</p>
+                <img src="img/big_03.png" alt="Popular Fairytales 03.크리스마스의 마법"> 
+            </a></li>
+        </ul>
+    </p>
+    <p class="btn">
+        <a href="#">Best</a>
+        <ul>
+            <li><a href="#">
+                <p>&lt;최고로 멋진 크리스마스트리&gt;</p>
+                <img src="img/big_04.png" alt="Best 01.최고로 멋진 크리스마스트리"> 
+            </a></li>
+            <li><a href="#">
+                <p>&lt;크리스마스에는 축복을&gt;</p>
+                <img src="img/big_05.png" alt="Best 02.크리스마스에는 축복을"> 
+            </a></li>
+            <li><a href="#">
+                <p>&lt;스노우맨&gt;</p>
+                <img src="img/big_06.png" alt="Best 03.스노우맨"> 
+            </a></li>
+        </ul>
+    </p>
+    <p class="btn">
+        <a href="#">Recommand</a>
+        <ul>
+            <li><a href="#">
+                <p>&lt;완벽한 크리스마스를 보내는 방법&gt;</p>
+                <img src="img/big_07.png" alt="Recommand 01.완벽한 크리스마스를 보내는 방법"> 
+            </a></li>
+            <li><a href="#">
+                <p>&lt;엄마 아빠와 함께 읽는 크리스마스 이야기&gt;</p>
+                <img src="img/big_08.png" alt="Recommand 02.엄마 아빠와 함께 읽는 크리스마스 이야기"> 
+            </a></li>
+            <li><a href="#">
+                <p>&lt;우체부 아저씨와 크리스마스&gt;</p>
+                <img src="img/big_09.png" alt="Recommand 03.우체부 아저씨와 크리스마스"> 
+            </a></li>
+        </ul>
+    </p>
+</div>
+</div>
+    <!-- 스크립트 -->
+    <script>
+        // jQuery
+
+        $(function(){
+            $('.btn a').on('click', function(){
+                // .btn ul을 보여줘라(열어라)
+                $('.btn').next('ul').filter(':visible').slideUp();
+
+                // 다른 ul을 열었을 때, 열려있는 ul이 자동으로 닫히도록 진행 
+                // .btn ul을 열 때, 열려있는 ul이 자동으로 닫히도록 진행
+                $(this).parent().next().slideDown();
+
+                // 기본 이벤트를 차단하여 이동을 막는다.
+                return false;
+            });
+        });
+    </script>
+</body>
+</html>
