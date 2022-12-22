@@ -1,8 +1,12 @@
 
 div#wrap {
+    max-width: 980px;
     width: 100%;
     margin: 0 auto;
     font-family: 'Nanum Gothic', sans-serif;
+    background: rgb(255,224,238);
+    background: linear-gradient(140deg, rgba(255,224,238,1) 0%, rgba(224,238,255,1) 100%);
+    padding: 10px 5rem;
 }
 #wrap a {
     color: #333;
@@ -13,21 +17,28 @@ div#wrap {
 #wrap ul {
     width: inherit;
     display: none;
-    background: rgb(255,224,238);
-    background: linear-gradient(140deg, rgba(255,224,238,1) 0%, rgba(224,238,255,1) 100%);
     margin: 20px 0;
-    padding: 20px;
+    padding: px;
 }
 #wrap ul>li {
     display: flex;
     justify-content: center;
 }
-
+#wrap>.btn {
+    padding: 15px 5px;
+    background: linear-gradient(45deg, #515ada 0%, #efd5ff 100%);
+    border-radius: 10px;
+    margin: 10px 20px;
+}
+#wrap>.btn>a {
+    color: #fff;
+}
+#wrap>.btn:hover {
+    opacity: 80%;
+}
 #wrap p>a {
-    font-size: 20px;
-    font-weight: 800;
-    
-    /* font-family: 'Schoolbell', cursive; */
+    font-size: 25px;
+    font-weight: 800;    
 }
 #wrap ul li a p {
     margin: 18px 0;
