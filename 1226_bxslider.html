@@ -1,0 +1,38 @@
+<!-- jquery의 라이브러리를 사용 -->
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <!-- <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"> -->
+    <link rel="stylesheet" href="css/jquery.bxslider.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/bxslider/4.2.12/jquery.bxslider.min.js"></script>
+
+    <!-- <script src="js/jquery.bxslider.js"></script> -->
+
+    <script>
+        $(document).ready(function(){
+            $('.slider').bxSlider({
+                auto: true,     // 슬라이드 자동 실행 여부(true - O, false - X)
+                mode: 'horizontal',     // 슬라이드 방향설정 (default - horizontal(수평), 외에 vertical(수직), fade이 있음.)
+
+            });
+        });
+    </script>
+
+    <title>슬라이드</title>
+</head>
+<body>
+    <div id="wrap">
+        <ul class="slider">
+            <li><img src="img/big_01.png" alt="동화1"></li>
+            <li><img src="img/big_02.png" alt="동화2"></li>
+            <li><img src="img/big_03.png" alt="동화3"></li>
+            <li><img src="img/big_04.png" alt="동화4"></li>
+            <li><img src="img/big_05.png" alt="동화5"></li>
+            <li><img src="img/big_06.png" alt="동화6"></li>
+        </ul>
+    </div>
+</body>
+</html>
